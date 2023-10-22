@@ -1,6 +1,5 @@
 #include "Krug.h"
 #include "Pravokutnik.h"
-#include "Mobitel.h"
 #include <iostream>
 
 int main()
@@ -39,12 +38,6 @@ int main()
 
     Pravokutnik p3 = Pravokutnik(5.78, 2.36);
     cout << p3.Opis();
-
-    Mobitel m1 = Mobitel();
-    m1.setCijena(199.99);
-    m1.setMemorija(20);
-    m1.setNaziv("Samsung Galaxy 21A");
-    cout << m1.Opis();
 
     system("PAUSE");
     return 0;
