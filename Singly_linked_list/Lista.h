@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -21,7 +21,7 @@ public:
 	void dodaj(string podatak, int indeks); //dodaj na neko mjesto
 	void brisi(int indeks); //brisi neki element
 	string vrati(int indeks) const; //vrati neki element
-	int velicina() const; //broj elementata u listi
+	int velicina() const; //broj elemenata u listi
 	void ocisti(); //ocisti listu
 	Lista(void); //konstruktor
 	~Lista(void); //destruktor
