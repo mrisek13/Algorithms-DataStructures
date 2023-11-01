@@ -1,4 +1,4 @@
-﻿#include "lista.h"
+#include "lista.h"
 
 //konstruktor
 Lista::Lista(void)
@@ -130,10 +130,10 @@ void Lista::ispisi() const
 
 string Lista::vrati(int indeks) const
 {
-	int i = 0;			// int i: trenutni index
-	Cvor* c = glava;	// Cvor* c: trenutni cvor
+	int i = 0;			// trenutni index
+	Cvor* c = glava;	// trenutni cvor
 
-	while (c != nullptr) {
+	while (c != NULL) {
 		if (i == indeks) {
 			return c->podatak;
 		}
@@ -147,9 +147,9 @@ string Lista::vrati(int indeks) const
 int Lista::velicina() const
 {
 	int n = 0;			// broj elemenata
-	Cvor* c = glava;	// Cvor* c: trenutni cvor
+	Cvor* c = glava;	// trenutni cvor
 
-	while (c != nullptr) {
+	while (c != NULL) {
 		n++;
 		c = c->sljedeci;
 	}
