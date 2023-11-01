@@ -54,7 +54,7 @@ void prikazi_Stog(Stog* _s)
 	cout << "\t\t\t\t";
 	if (_s->vrh != NULL)
 	{
-		cvor* c = _s->vrh;
+		Cvor* c = _s->vrh;
 		while (c != NULL)
 		{
 			cout << c->podatak << " ";
@@ -64,6 +64,15 @@ void prikazi_Stog(Stog* _s)
 	else
 		cout << "prazan stog";
 	cout << "(" << _s->velicina() << ")" << endl; //velicina stoga
+}
+
+// pomocna funkcija za vracanje sa stoga i ispis na ekran
+void citaj_Stog(Stog* _s)
+{
+	tip_elementaT temp; // privremena varijabla
+	temp = _s->pop(); //uzmemo sa stoga
+	cout << "Vracamo sa stoga " << temp << endl;
+	prikazi_Stog(_s);
 }
 
 //pomocna funkcija za stavljanje na stog i ispis na ekran
@@ -79,7 +88,7 @@ void parni(Stog* _s)
 	if (_s->vrh != NULL)
 	{
 		cout << "\nParni: ";
-		cvor* c = _s->vrh;
+		Cvor* c = _s->vrh;
 		while (c != NULL)
 		{
 
@@ -95,7 +104,7 @@ void inkrement(Stog* _s)
 {
 	if (_s->vrh != NULL)
 	{
-		cvor* c = _s->vrh;
+		Cvor* c = _s->vrh;
 		cout << "\nInkrementirano: ";
 		while (c != NULL)
 		{
