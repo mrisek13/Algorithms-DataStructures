@@ -26,7 +26,7 @@ int main()
 	cout << "Element 0: " << l.vrati(0) << endl;
 	cout << "Element 5: " << l.vrati(5) << endl;
 	cout << "Element 999: " << l.vrati(999) << endl;
-	////dodatni zadatak - kombinacija dvije funkcije liste vraca posljednji element liste
+	//dodatni zadatak - kombinacija dvije funkcije liste vraca posljednji element liste
 	l.ocisti();
 	l.ucitaj_test();
 	cout << "Posljednji element liste: " << l.vrati(l.velicina() - 1) << endl;
