@@ -77,12 +77,12 @@ int main(int argc, char** argv) {
 	cout << "Dodatak - nastavak" << endl << endl;
 		
 	BsStablo* s3 = new BsStablo();
-    long int n = 1000000; // Broj čvorova
-
-    double elapsed_time = generiraj_stablo(s3, n);
+	long int n = 1000000; // Broj čvorova
+	
+	double elapsed_time = generiraj_stablo(s3, n);
 
 	cout << "Broj cvorova: " << s3->broj_cvorova() << endl;
 	cout << "Najveci kljuc: " << s3->najveci_kljuc() << endl;
-	cout << "Najveca dubina je: " << s3->najveca_dubina() << endl;	
-  cout << "Vrijeme generiranja [ms]: " << elapsed_time << " ms" << endl;
+	cout << "Najveca dubina je: " << s3->najveca_dubina() << endl;
+	cout << "Vrijeme generiranja [ms]: " << elapsed_time << " ms" << endl;
 }
